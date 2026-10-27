@@ -1,0 +1,123 @@
+.header {
+    background: linear-gradient(
+        135deg,
+        #fbcfe8,
+        #f472b6,
+        #db2777
+    );
+
+    padding: 20px 40px;
+    border-bottom: 3px solid #ec4899;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    box-shadow:
+        0 4px 15px rgba(219, 39, 119, 0.25),
+        0 0 20px rgba(244, 114, 182, 0.4),
+        inset 0 0 15px rgba(255, 255, 255, 0.4);
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    text-shadow:
+        0 0 5px #f472b6,
+        0 0 10px #ec4899,
+        0 0 20px #db2777,
+        0 0 40px #be185d;
+
+    animation: brilhoLogo 3s infinite alternate;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    display: block;
+
+    color: #831843;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 12px 18px;
+    border-radius: 12px;
+
+    border: 2px solid rgba(244, 114, 182, 0.8);
+
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(6px);
+
+    transition: all 0.35s ease;
+}
+
+.menu li a:hover {
+    color: #ffffff;
+
+    background: #ec4899;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 10px #f472b6,
+        0 0 20px #ec4899,
+        0 0 30px #db2777;
+}
+
+.menu li:nth-child(odd) a:hover {
+    background: #db2777;
+
+    box-shadow:
+        0 0 10px #ec4899,
+        0 0 20px #db2777,
+        0 0 30px #9d174d;
+}
+
+@keyframes brilhoLogo {
+    from {
+        text-shadow:
+            0 0 10px #f472b6,
+            0 0 20px #ec4899,
+            0 0 30px #db2777;
+    }
+
+    to {
+        text-shadow:
+            0 0 15px #ffffff,
+            0 0 30px #f472b6,
+            0 0 50px #be185d;
+    }
+}
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        text-align: center;
+    }
+}

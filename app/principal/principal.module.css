@@ -1,0 +1,241 @@
+.main {
+    min-height: 100vh;
+    color: #831843;
+    background: radial-gradient(circle at top, #fbcfe8, #f472b6 50%, #db2777 100%);
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 100px 30px;
+}
+
+.status {
+    color: #be185d;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow:
+        0 0 10px #f472b6,
+        0 0 25px rgba(244, 114, 182, 0.6);
+}
+
+.hero h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 20px;
+    color: #831843;
+}
+
+.hero h2 span {
+    color: #be185d;
+    text-shadow:
+        0 0 15px #f472b6,
+        0 0 30px #fbcfe8;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #9d174d;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(45deg, #f472b6, #ec4899, #db2777);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 0 20px #f472b6,
+        0 0 40px #db2777;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.45);
+    border: 2px solid rgba(244, 114, 182, 0.6);
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(219, 39, 119, 0.15);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow:
+        0 0 15px #f472b6,
+        0 0 30px rgba(236, 72, 153, 0.4);
+}
+
+.card h3 {
+    color: #9d174d;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #831843;
+    font-weight: 500;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.dashboard h2 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #831843;
+    text-shadow: 0 0 10px #f472b6;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.45);
+    border: 2px solid rgba(236, 72, 153, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(219, 39, 119, 0.15);
+}
+
+.stat:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow:
+        0 0 15px #ec4899,
+        0 0 30px #db2777;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    color: #db2777;
+    margin-bottom: 10px;
+    text-shadow:
+        0 0 10px #f472b6,
+        0 0 25px rgba(244, 114, 182, 0.5);
+}
+
+.stat p {
+    color: #831843;
+    font-weight: 700;
+}
+
+/* TIMELINE */
+
+.timeline {
+    padding: 80px 40px;
+}
+
+.timeline h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #831843;
+    text-shadow: 0 0 10px #f472b6;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-left: 4px solid #ec4899;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 0 18px 18px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(219, 39, 119, 0.1);
+}
+
+.event span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #f472b6, #ec4899);
+    color: #ffffff;
+    font-weight: 700;
+
+    box-shadow:
+        0 0 12px #f472b6,
+        0 0 20px rgba(236, 72, 153, 0.4);
+}
+
+.event p {
+    margin: 0;
+    color: #831843;
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(131, 24, 67, 0.95);
+    border-top: 2px solid rgba(244, 114, 182, 0.6);
+    color: #fbcfe8;
+    font-weight: 600;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .cards,
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard,
+    .timeline {
+        padding: 60px 20px;
+    }
+
+    .event {
+        flex-direction: column;
+        text-align: center;
+    }
+}
